@@ -1,0 +1,404 @@
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  margin-top:-1.2em;
+  margin-left: 0em;
+  top: 100px !important; 
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<title>Funny Quotes</title>
+<img style="padding-top: 5em" src="https://aravali.edu.in/wp-content/uploads/2020/08/updated-logo-in-150X150png.png" a href="https://aravali.edu.in/">
+`<div class="topnav">
+  <a class="active" href="file:///C:/Users/admin/Documents/12/Brainy%20Fools%20Project/Quote%20PM.html">Home</a>
+  <a href="https://www.youtube.com/@aravaliinternationalschool1791/videos" target="_blank">Youtube<img width="20px" src="https://purepng.com/public/uploads/large/purepng.com-youtube-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596145hip8d.png"></a>
+
+
+  <a href="https://www.facebook.com/AravaliInternationalSchoolSec43/" target="_blank">Facebook<img width="20px" src="https://freelogopng.com/images/all_img/1657548084facebook-logo-png.png"></a>
+  <a href="https://aravali.edu.in/" target="_blank">Aravali<img width= "20px"src="https://aravali.edu.in/wp-content/uploads/2020/08/updated-logo-in-150X150png.png"></a>
+</div>
+
+
+  <body onload="startTime(); startDate()">
+    <div class="container">
+       <div id="date"></div>
+      <div id="display"></div>
+      
+      <div class="header">
+        <p style="font-family:"courier; font-size:250%; text-align:top-center; text-transform:capitalize;><u>Funny quote</u>
+         
+        </p></div>
+
+        <p id="quote">"I walk around like everything is fine, but deep down, inside my shoe, my sock is sliding off."<br> -Brainy Fools</p>
+     
+    </div>
+    <div id="b-nav">
+      <ul>
+        <button class="button" onclick="genQuote()">Funny Quote</button>
+       </ul>
+     </div>
+    
+
+<style>
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  background-image: url('https://t3.ftcdn.net/jpg/05/11/86/68/360_F_511866812_PNzfiKtyCRCskrWxqVVf0emszxhAeufK.jpg');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: top;
+  z-index: -2;
+}
+
+img { 
+position:absolute;
+z-index:  1;
+
+
+}
+#footer {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: -1px;
+  background-color: white;
+  text-align: center;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#line {
+  width: 100%;
+  bottom: 4em;
+  position: fixed;
+  border-bottom: solid white;
+  padding: 15px;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.header{
+  padding:0px;
+  text-align:center;
+  color:white;
+  font-size:20px
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.wrapper {
+  background-color: red;
+}
+
+span {
+  border-radius: 100px;
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+  #display {
+  color: white;
+  font-size: 2em;
+  top: 10px;
+ margin-left:41.7em  ;
+  padding-bottom: 21px;
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  position :absolute;
+}
+
+#content {
+  height: 45em;
+}
+
+
+
+ p { 
+
+
+  max-width: 60em;
+  color: black     ;
+  font-family:"Kristen ITC";
+  letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto;
+  text-transform: capitalize;
+  font-weight:800;
+  opacity:4.5;
+  line-height: 145%;
+  font-size: 2.3em;
+  font-variant: small-caps;
+
+
+
+}
+p:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+
+.container {
+  padding-top: 6em;
+  text-align: center;
+}
+
+#b-nav {
+  padding-bottom: 5em;
+  position: fixed;
+  width: 100%;
+  bottom: 2em;
+}
+
+#b-nav ul {
+  margin: 0;
+  padding: 0.5em;
+  list-style-type: none;
+  text-align: center;
+}
+
+#b-nav ul li {
+  display: inline;
+}
+
+#b-nav ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  background-color: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.hold {
+  width: 100%;
+  text-align: left;
+}
+
+
+button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }#date {
+  color: solid black;
+}
+
+@media screen 
+ and (max-device-width: 800px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    p {
+      font-size: 1em;
+    }
+}
+
+
+
+#date {
+  color: white;
+}
+
+@media screen 
+ and (max-device-width: 800px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    p {
+      font-size: 1em;
+    }
+}
+
+.fa-twitter {
+  font-size: 30px !important;
+  margin-left: 20px;
+}
+
+</style>
+
+<script>
+function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    var ampm = "";
+    m = checkTime(m);
+
+    if (h > 12) {
+      h = h - 12;
+      ampm = " PM";
+    } else if (h == 12){
+        h = 12;
+      ampm = " AM";
+    } else if (h < 12){
+        ampm = " AM";
+    } else {
+        ampm = "PM";
+    };
+  
+  if(h==0) {
+    h=12;
+  }
+    
+    document.getElementById('display').innerHTML = h+":"+m+ampm;
+    var t = setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i) {
+    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+function genQuote() {
+  var randNum = Math.floor(Math.random() * 15) + 1;
+  document.getElementById('quote').innerHTML = quotes[randNum];
+  var tweetQuote = quotes[randNum].split(' ').join('%20');
+  tweetQuote = tweetQuote.split('<br>').join('');
+  tweetQuote = "https://twitter.com/intent/tweet?text=" + tweetQuote.split('"').join('')
+  $('.twitter-share-button').attr('href', tweetQuote);
+}
+
+//quote array
+
+var quotes = ["Blank", "\"I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with ’em later.\"<br> -Mitch Hedberg",
+
+"\"I walk around like everything is fine, but deep down, inside my shoe, my sock is sliding off.\"<br> -Creator's favourite",
+
+"\"Accept who you are. Unless you’re a serial killer.\"<br> -Ellen DeGeneres",
+
+"\"If a book about failures doesn't sell, is it a success?\"<br> -Jerry Seinfeld",
+
+"\"If you're too open-minded; your brains will fall out.\"<br> -Lawrence Ferlinghetti",
+ "\"My mother always used to say: The older you get, the better you get, unless you’re a banana.\"<br> —Rose", 
+"\"I love being married. It's so great to find that one special person you want to annoy for the rest of your life.\"<br> —Rita Rudner", 
+"\"Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.\"<br> —Will Ferrell", 
+"\"Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.\"<br> —Jack Handey",
+"\"I never feel more alone than when I’m trying to put sunscreen on my back.\"<br>- Jimmy Kimmel",
+"\"There is no sunrise so beautiful that it is worth waking me up to see it.\"<br>―Mindy Kaling",
+"\"Truth hurts. Maybe not as much as jumping on a bicycle with a seat missing, but it hurts.\"<br> —Lt. Frank Drebin",
+"\"Common sense is like deodorant. The people who need it most never use it\"<br> —Creator’s favourite", 
+
+
+"\"Insomnia sharpens your math skills because you spend all night calculating how much sleep you will get if you are able to fall asleep right now.\"<br> - Creator’s favourite",  
+             "\"I never forget a face—but in your case, I’ll be glad to make an exception.\"<br> —Groucho Marx", ];
+
+
+
+
+
+
+</script>

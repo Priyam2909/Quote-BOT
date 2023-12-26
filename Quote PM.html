@@ -1,0 +1,590 @@
+<HTML>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+ 
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+</style>
+  </head>
+<BODY>
+<TITLE>Quote Bot</TITLE>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+
+<img src="https://aravali.edu.in/wp-content/uploads/2020/08/updated-logo-in-150X150png.png">
+
+    
+   <body onload="startTime(); startDate()">
+    <div class="container">
+   
+
+
+      <div id="date"> 
+<h1 class="font-effect-shadow-multiple">EduQuote Explorer</h1>
+
+
+
+      </div>
+      <div id="display"></div>
+      <div id="display1"></div>
+      <div id="date1"></div>
+      <div id="content">
+        <p id="quote">"You have to dream before your dreams can come true." <br/>--A. P. J. Abdul Kalam</p>
+
+
+
+        
+      </div>
+
+
+   
+    <div id="b-nav">
+      <ul>
+        <button class="button" onclick='genQuote()'>New Quote</button>
+        <br>
+        <a href="file:///C:/Users/admin/Documents/12/Brainy%20Fools%20Project/Ins%20PM.html">
+          <button class="button" >Inspirational Quotes</button></a>
+     
+        <a href="file:///C:/Users/admin/Documents/12/Brainy%20Fools%20Project/Fun%20PM.html">
+          <button class="button">Funny Quotes</button></a>
+
+        
+            
+         
+           
+        
+          
+        
+
+      </ul>
+    </div>
+    <div id="a-nav">
+      <a href="https://www.facebook.com/AravaliInternationalSchoolSec43/" target="_blank">
+              <img src="https://freelogopng.com/images/all_img/1657548084facebook-logo-png.png" target="_blank" width="50px" >   </a>
+         
+             
+              
+            <a style="margin-left: 5em" href="https://www.youtube.com/channel/UCgRLIxupb9AjQD4rhAwYsmw" target="_blank"> <img width="55px" src="https://purepng.com/public/uploads/large/purepng.com-youtube-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596145hip8d.png"></a>
+          
+    </div>
+
+<div id="abcd" style="margin-left: 88em">
+  <a href="https://aravali.edu.in/"target="_blank"> <img width="60px" src=
+  "https://aravali.edu.in/wp-content/uploads/2020/08/updated-logo-in-150X150png.png"></a>
+
+
+
+
+</div>
+
+   <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+
+ 
+
+<style>
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0, 0.75);
+  background-image: url("https://c1.wallpaperflare.com/preview/846/417/304/against-light-clouds-west-tree.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: -2;
+}
+
+img { 
+position:absolute;
+z-index: -1;
+
+
+
+}
+
+#display {
+  color: white;
+  font-size: 2.9em;
+  top: 0px;
+  border-bottom:  solid;
+  padding-bottom: 0px;
+  opacity: 1;
+   
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+#date {
+  color: black;
+  outline:black;
+  font-size: 1.3em;
+  font-family: "Lucida Handwriting", Brush Script MT;
+  font-weight: 800;
+  text-shadow: 3em 3em 3em 3em #ababab;
+  letter-spacing: 0.2em;
+  padding-top: 0px;
+padding-bottom: 0px;
+  opacity: 1;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  z-index: 1;
+}
+#date:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+
+}
+#display1{
+color: white;
+  font-size: 2em;
+  top: 10px;
+ margin-left:42.1em  ;
+  padding-bottom: 21px;
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  position :absolute;
+
+
+
+}
+#footer {
+  
+  
+  width: 20%;
+  height: 40px;
+  position: fixed;
+  bottom: 1px;
+  background-color: white;
+  text-align: center;
+  opacity: 1;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+.social-icons a {
+  text-decoration: none  margin: 0 100px;
+}
+
+.social-icons img {
+  width: 300px;
+  height: 300px;
+
+
+}
+
+
+
+
+
+.wrapper {
+  background-color: red;
+}
+
+span {
+  border-radius: 100px;
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+#content {
+  height: 45em;
+}
+ p {
+  max-width: 60em;
+  color: rgb(255, 1, 71) ;
+  font-family:"Sofia", sans serif;
+  letter-spacing:0.1em;
+  text-align:center;
+  margin: 40px auto;
+  text-transform: capitalize;
+
+  font-weight:bolder;
+  opacity:4.5;
+  line-height: 145%;
+  font-size: 2.5em;
+  font-variant: small-caps;
+}
+
+p:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+
+}
+
+.container {
+  padding-top: 3em;
+  text-align: center;
+}
+
+#b-nav {
+  padding-bottom: 5em;
+  position: fixed;
+  width: 100%;
+  bottom: 2em;
+}
+#a-nav {
+  position:fixed;
+  width: 20%;
+  bottom: 5em;
+  display: flex;
+ margin-left: 500em: 
+  letter-spacing:1.6; 
+}
+#abcd{
+position:fixed;
+  max-width: 200%;
+  bottom: 5em;
+   
+  
+  
+
+
+}
+#b-nav ul {
+  margin: 0;
+  padding: 0.5em;
+  list-style-type: none;
+  text-align: center;
+}
+
+#b-nav ul li {
+  display: inline;
+}
+
+#b-nav ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  background-color: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.hold {
+  width: 100%;
+  text-align: left;
+}
+
+}
+
+#name1  {
+ outline: none;
+  padding-top: 5px;
+  text-decoration: none;
+  opacity:0.4 ;
+  background-color: black;
+  color: white;
+  border: thin solid white;
+  height: 40px;
+  width: 100px;
+  border-radius: 12px;
+  transition: 0.5s;
+  padding-bottom: 5px;
+  margin-top: 0px;
+ 
+  
+  
+  
+}
+  #name1:hover{
+  background-color: white;
+  color: black;
+  border: thin solid black;
+  opacity: 0.8;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  
+}
+#name {
+   outline: none;
+  padding-top: 5px;
+  text-decoration: none;
+  opacity:0.4 ;
+  background-color: black;
+  color: white;
+  border: thin solid white;
+  height: 40px;
+  width: 100px;
+  border-radius: 12px;
+  transition: 0.5s;
+  padding-bottom: 5px;
+  margin-top: 0px;
+ 
+  
+}
+#name:hover{
+  background-color: white;
+  color: black;
+  border: thin solid black;
+  opacity: 0.8;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+} 
+button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  opacity:1;
+  left:0%;
+
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+opacity:1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+
+}
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }#date {
+  color: solid black;
+}
+
+@media screen 
+ and (max-device-width: 800px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    p {
+      font-size: 1em;
+    }
+}
+
+
+}
+
+</style>
+<script>
+    function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    var ampm = "";
+    m = checkTime(m);
+
+    if (h > 12) {
+      h = h - 12;
+      ampm = " PM";
+    } else if (h == 12){
+        h = 12;
+      ampm = " AM";
+    } else if (h < 12){
+        ampm = " AM";
+    } else {
+        ampm = "PM";
+    };
+  
+  if(h==0) {
+    h=12;
+  }
+    
+    document.getElementById('display1').innerHTML = h+":"+m+ampm;
+    var t = setTimeout(function(){startTime()},500);
+}
+function checkTime(i) {
+    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+  
+
+function genQuote() {
+  var randNum = Math.floor(Math.random() * 30) + 1;
+  document.getElementById('quote').innerHTML = quotes[randNum];
+
+  
+}
+
+
+//quote array
+    
+var quotes = ["Blank", "\"Teaching is a very noble profession that shapes the character, caliber, and future of an individual. If the people remember me as a good teacher, that will be the biggest honour for me.\"<br> -A. P. J. Abdul Kalam ","\"I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.\"<br> -Nelson Mandela", "\"You cannot cross the sea merely by standing and staring at the water. \"<br> -Rabindranath Tagore",
+"\"Out of the mountain of despair, a stone of hope.\"<br> -Martin Luther King Jr.",
+"\"Education is the most powerful weapon which you can use to change the world.\"<br> -Nelson Mandela",
+"\"Dare to be free, dare to go as far as your thought leads and dare to carry that out in your life.\"<br> -Swami Vivekananda",
+"\"I like friends who have independent minds because they tend to make you see problems from all angles.\"<br> -Nelson Mandela",
+"\"It always seems impossible until it is done.\"<br> -Nelson Mandela",
+"\"Darkness cannot drive out darkness, only light can do that. Hate cannot drive out hate, only love can do that.\"<br> -Martin Luther King Jr","\"Faith is the bird that feels the light when the dawn is still dark.\"<br> -Rabindranath Tagore",
+"\"Arise, awake, and don’t stop till you reach your goal.\"<br> -Swami Vivekananda","\"It is very simple to be happy, but it is very difficult to be simple. -Rabindranath Tagore",
+"\"In three words I can sum up everything I have learned about life: it goes on.\"<br> -A. P. J. Abdul Kalam",
+"\"If you want to shine like a sun, first burn like a sun.\"<br> -A. P. J. Abdul Kalam",
+"\"You have to dream before your dreams can come true.\"<br> -A. P. J. Abdul Kalam",
+"\"Coincidence is God way of remaining anonymous.\"<br> -Albert Einstein",
+"\"Strive not to be a success, but rather to be of value. -Albert Einstein",
+"\"Its not that I am so smart, it is just that I stay with problems longer.\"<br> -Albert Einstein",
+"\"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.\"<br> -Gautam Buddha",
+"\"You will not be punished for your anger, you will be punished by your anger.\"<br> -Gautam Buddha",
+"\"Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.\"<br> -Gautam Buddha", "\"I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with ’em later.\"<br> -Mitch Hedberg",
+"\"I walk around like everything is fine, but deep down, inside my shoe, my sock is sliding off.\"<br> -Creator's favourite",
+"\"Accept who you are. Unless you’re a serial killer.\"<br> -Ellen DeGeneres",
+"\"If a book about failures doesn't sell, is it a success?\"<br> -Jerry Seinfeld",
+"\"If you're too open-minded; your brains will fall out.\"<br> -Lawrence Ferlinghetti",
+ "\"My mother always used to say: The older you get, the better you get, unless you’re a banana.\"<br> —Rose", 
+"\"I love being married. It's so great to find that one special person you want to annoy for the rest of your life.\"<br> —Rita Rudner", 
+"\"Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.\"<br> —Will Ferrell", 
+"\"Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.\"<br> —Jack Handey",
+"\"I never feel more alone than when I’m trying to put sunscreen on my back.\"<br>- Jimmy Kimmel",
+"\"There is no sunrise so beautiful that it is worth waking me up to see it.\"<br>―Mindy Kaling",
+"\"Truth hurts. Maybe not as much as jumping on a bicycle with a seat missing, but it hurts.\"<br> —Lt. Frank Drebin",
+"\"Common sense is like deodorant. The people who need it most never use it\"<br> —Creator's favourite", 
+
+
+"\"Insomnia sharpens your math skills because you spend all night calculating how much sleep you will get if you are able to fall asleep right now.\"<br> - Creater's favourite",  
+             "\"I never forget a face—but in your case, I’ll be glad to make an exception.\"<br> —Groucho Marx",
+              
+];
+
+
+//date
+
+</script>
+
+
+</BODY>
+</HTML>
